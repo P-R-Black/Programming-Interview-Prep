@@ -1,0 +1,52 @@
+input {
+  background-color: transparent;
+  border: 1px solid var(--color-primary-border);
+  border-radius: .5rem;
+  box-shadow: var( --box-shadow-secondary);
+  color: var(--color-primary-font);
+  height: 2rem;
+  margin-right: 1rem;
+  outline: none;
+  padding: 1rem .25rem;
+  width: 12rem;    
+}
+
+input[type=number]:focus {
+    border: 1px solid var(--color-secondary-border);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  
+  margin: 0;
+  
+}
+
+input[type=number]{
+  -moz-appearance:textfield;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px){
+
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px){
+ 
+}
+
+@media screen and (max-width: 379px){
+  .input_section form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .input_section button {
+    width: 12rem;
+  }
+
+}

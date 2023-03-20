@@ -1,0 +1,60 @@
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_container > div a{
+    color: var(--color-primary-font);
+}
+
+.navLinks {
+    display: flex;
+    gap: .5rem;
+}
+
+.mobile_title_container .mobile_title{
+    display: none;
+}
+
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px){
+
+    .navbar_container{
+        justify-content: space-around;
+    }
+
+    .title_container {
+        text-align: center;
+        line-height: 1.1;
+    }
+    
+}
+
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px){
+
+    .title_container .title{
+        display: none;
+    }
+
+    .mobile_title_container .mobile_title{
+        display: block;
+    }
+
+    .mobile_title{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 732px){
+
+    .logo_container a .logo {
+        font-size: 1.75rem;
+   }
+    
+}

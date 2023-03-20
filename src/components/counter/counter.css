@@ -1,0 +1,17 @@
+.counter_section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem; 
+}
+
+.counter {
+    color: var(--color-primary-bg);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: var(--color-primary-font);
+}
+
+
+

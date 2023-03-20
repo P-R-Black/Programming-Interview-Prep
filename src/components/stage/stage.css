@@ -1,0 +1,66 @@
+.stage_container {
+    margin-top: 4rem !important;
+    margin-bottom: 2rem;
+}
+
+.inner_div {
+    display: flex;
+    gap: 2rem;
+}
+
+.bg_circle {
+    background-color: var(--color-circle);
+    border-radius: 50% 0 50% 50%;
+    bottom: 80%;
+    box-shadow: -2rem .5rem .5rem rgba(0, 0, 0, .31);
+    height: 25rem;
+    left: 62.2%;
+    position: absolute;
+    width: 25rem;
+    z-index: -999;
+}
+
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px){
+    .inner_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg_circle {
+        bottom: 87%;
+        height: 25rem;
+        left: 35%;
+        width: 25rem;
+    }
+    
+    
+   
+    
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px){
+
+    .bg_circle {
+        bottom: 90%;
+        height: 25rem;
+        left: 30%;
+        width: 20rem;
+    }
+   
+}
+
+@media screen and (max-width: 380px){
+
+    .bg_circle {
+        bottom: 90%;
+        height: 25rem;
+        left: 22%;
+        width: 20rem;
+    }
+   
+}
+

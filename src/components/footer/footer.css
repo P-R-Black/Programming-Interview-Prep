@@ -1,0 +1,22 @@
+.footer_container{
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    width: var(--container-width-lg)
+}
+
+.github_logo{
+    align-items: center;
+    display: flex;
+    color: var(--color-primary-font);
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.prorgrams {
+    display: flex;
+    font-size: 1.25rem;
+    gap: 1rem;
+}
+
