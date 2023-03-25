@@ -12,6 +12,11 @@ import { DiReact } from 'react-icons/di';
 
 
 export const Footer = () => {
+  const d = new Date()
+  let year = d.getFullYear()
+
+console.log(year)
+
   return (
     <footer className='container footer_container'>
         <div className="designed_by">
@@ -19,10 +24,10 @@ export const Footer = () => {
             <h4 className="prorgrams"><span><FaPython/></span><span><SiDjango/></span><span><AiFillHtml5/></span><span><DiCss3/></span><span><DiJavascript1/></span><span><DiReact/></span></h4>
         </div>
         <div className="github">
-            <a href="https://github.com" target="_blank"><h3 className="github_logo"><BsGithub/><span>Github</span></h3></a>
+            <a href="https://github.com/P-R-Black/Programming-Interview-Prep" target="_blank"><h3 className="github_logo"><BsGithub/><span>Github</span></h3></a>
         </div>
         <div className="website_rights">
-            <h3 className="rights">&copy;2023 All Rights Reserved</h3>
+            <h3 className="rights">&copy; {year} All Rights Reserved</h3>
         </div>
     </footer>
     

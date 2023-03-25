@@ -20,3 +20,45 @@
     gap: 1rem;
 }
 
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px){
+    .footer_container  {
+        width:  var(--container--width-md)
+    }
+    
+}
+
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px){
+    .footer_container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: .75rem;
+        width:  var(--container--width-sm);
+
+        height: fit-content;
+
+
+    }
+
+    .designed_by {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;;
+    }
+
+
+    .rights {
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 732px){
+    
+    
+}

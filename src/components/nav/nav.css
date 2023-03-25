@@ -56,5 +56,17 @@
     .logo_container a .logo {
         font-size: 1.75rem;
    }
+
+   .title_container .title{
+       display: none;
+    }
+
+    .mobile_title_container .mobile_title{
+        display: block;
+    }
+
+    .mobile_title{
+        text-align: center;
+    }
     
 }
