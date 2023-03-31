@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './results.css'
 
 export const Results = ({numberOfQuestions, score, missed, showMissedQuestion, refreshPage}) => {
+
+    const [keywords, setKeywords] = useState([])
+
+
+    useEffect(() => {
+        const getKeywords = () => {
+            let  newState = [];
+            let kwords;
+             showMissedQuestion.map((k) => (
+                 newState.push(k.keyword)
+             ))
+             let test = newState.flat()
+             for (let i = 0; i < test.length; i++){
+                 let newTods = [...test]
+                 kwords = newTods.filter(ks => ks !== newTods)
+             }
+             return kwords
+         }
+        setKeywords(getKeywords)
+    },[showMissedQuestion])
+    
+
+
 
   return (
     <div className='container result_container'>
@@ -15,11 +38,11 @@ export const Results = ({numberOfQuestions, score, missed, showMissedQuestion, r
             ): (
                 <div className="answer_summary_container">
                 <div className="answer_summary">
-                    <p><span className="wrong_question ques">Question</span><span className="wrong_answers ans">Answers</span></p>
+                    <p><span className="wrong_question ques">What You Got Wrong</span><span className="wrong_answers ans">The Correct Answer(s)</span></p>
                 </div>
                 {
                     showMissedQuestion.map((ques, idx) => (
-                        <div className="summary_display" key={idx}>
+                    <div className="summary_display" key={idx}>
                         <span className="wrong_question">{ques.question} </span>
                         |
                         <span className="wrong_answers"> {ques.correct}</span>
@@ -29,6 +52,13 @@ export const Results = ({numberOfQuestions, score, missed, showMissedQuestion, r
                     
                     )
                 }
+                <h3 className="keyword_box">Based on the questions you missed, here are some subjects that you may want to brush up on before your interview.</h3>
+                <ul>
+                    {keywords.map((item, key) => (
+                        <li key={key}><h3>{item}</h3></li>
+                    ))}
+                </ul>
+             
             </div>
             )}
                 <button onClick={refreshPage} className="play_again" id="btn">More Questions</button>

@@ -104,3 +104,8 @@
    right: 110%;
    top: 25%
 }
+
+.keyword_box{
+    color: rgb(24, 137, 134);
+    margin: 1rem 0;
+}

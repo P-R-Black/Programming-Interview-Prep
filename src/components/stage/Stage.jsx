@@ -32,12 +32,10 @@ export const Stage = () => {
    
     const quizQuestArray = quizQuest.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
 
-    const { question, answers, correct, explanation } = quizQuestArray[activeQuestion];
+    const { question, answers, correct, explanation, keyword } = quizQuestArray[activeQuestion];
 
     const [updated, setUpdated] = useState(numberOfQuestions);
 
-
-    console.log('logo', logo)
 
 
     const handleChange = (e) =>{
@@ -53,8 +51,6 @@ export const Stage = () => {
       getDigit.current.value = null
     };
 
-    console.log('numberOfQuestions', numberOfQuestions)
-
 
     const getLogo = (e) => {
         setLogo(e.target.innerText)
@@ -63,7 +59,6 @@ export const Stage = () => {
     const refreshPage = () => {
         window.location.reload(false)
     }
-
 
     
     const answerSelected = () => {
@@ -88,7 +83,7 @@ export const Stage = () => {
         } else {
             setMissed((prev) => prev + 1)
             setShowMissedQuestion((prev => 
-                [...prev, {question, correct, explanation}]))
+                [...prev, {question, correct, explanation, keyword}]))
         }
     }
 
