@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './nav.css'
 
-export const Nav = ({ getLogo, logo}) => {
+export const Nav = ({ getLogo, logo, refreshPage}) => {
 
   const [isActive, setIsActive] = useState(true)
 
@@ -15,7 +15,7 @@ export const Nav = ({ getLogo, logo}) => {
     <>
         <nav className="container navbar_container">
             <div className="logo_container">
-                <a href="#react"><h1 tabIndex='1' data-testid="logoTest" className="logo">{logo}</h1></a>
+                <a href="#react"><h1 tabIndex='1' data-testid="logoTest" className="logo" onClick={refreshPage}>{logo}</h1></a>
             </div>
             <div className="title_container">
                 <h1 tabIndex='2' className="title" aria-labelledby='Interview Questions'>Interview Questions</h1>

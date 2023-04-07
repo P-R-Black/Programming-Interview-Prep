@@ -93,6 +93,7 @@ export const Stage = () => {
         <Nav 
             getLogo={getLogo}
             logo={logo}
+            refreshPage={refreshPage}
         />
         <div className="container stage_container">
             <Counter 
