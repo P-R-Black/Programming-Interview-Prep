@@ -41,7 +41,7 @@ const djangoQuestionBank =[
     {
         question: 'What are a couple of the advantageous features of Django?',
         answers: [
-            'Django provides multiprocessor support and the ORM system has a lot of features', 
+            'Django provides multiprocessor support and the ORM system has a lot of features.', 
             'It is great for small projects.', 
             'Battery included, rapid development, security, scalable, community supported, admin interface, python web-framework.', 
             'Django is small and easy to learn.', 

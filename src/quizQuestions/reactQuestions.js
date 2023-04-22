@@ -1,29 +1,29 @@
 const reactQuestionBank = [
    {
-    question: 'What is a PureComponent?',
-    answers: [ 
-        'PureComponents are similar to Component but it skips re-renders for same props and state. So a PureComponent only renders components when there is a difference between current and previous states or props.',
-        'PureComponents help are componenents that share data between components, which you can\'t easily share with props',
-        'PureComponents are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.',
-        'PureComponents are portals that provide a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.',
-],
-    correct: 'PureComponents are similar to Component but it skips re-renders for same props and state. So a PureComponent only renders components when there is a difference between current and previous states or props.',
-    explanation: 'PureComponents only does a shallow comparison on objects. If the props or state contains complex data structures, it may produce false-negatives',
-    questionId: '22001',
-    keyword: ['PureComponent']
+        question: 'What is a PureComponent?',
+        answers: [ 
+            'PureComponents are similar to Component but it skips re-renders for same props and state. So a PureComponent only renders components when there is a difference between current and previous states or props.',
+            'PureComponents help are components that share data between components, which you can\'t easily share with props',
+            'PureComponents are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.',
+            'PureComponents are portals that provide a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.',
+    ],
+        correct: 'PureComponents are similar to Component but it skips re-renders for same props and state. So a PureComponent only renders components when there is a difference between current and previous states or props.',
+        explanation: 'PureComponents only does a shallow comparison on objects. If the props or state contains complex data structures, it may produce false-negatives',
+        questionId: '22001',
+        keyword: ['PureComponent']
    },
    {
-    question: 'What are the differences between var, let, and const keywords?',
-    answers: [
-        'Var is block scope, and let and const are functional scope. Also var and let variables can\'t be reinitialized, and const variables can be reinitialized',
-        'Var and const block scope, and let is functional and block scope. Also var and const variables can be reinitialized, and let variables cannot be reinitialized',
-        'Var is functional scope, and let and const are block scope. Also var and let variables can be reinitialized, and const variables cannot be reinitialized',
-        'Let and var are functional scope, const is block scope. Also let and var variables can be reinitialized, and const variables cannot be reinitialized',
-    ],
-    correct: 'Var is functional scope, and let and const are block scope. Also var and let variables can be reinitialized, and const variables cannot be reinitialized',
-    explanation: '',
-    questionId: '22002',
-    keyword: ['let', 'var', 'const']
+        question: 'What are the differences between var, let, and const keywords?',
+        answers: [
+            'Var is block scope, and let and const are functional scope. Also var and let variables can\'t be reinitialized, and const variables can be reinitialized',
+            'Var and const block scope, and let is functional and block scope. Also var and const variables can be reinitialized, and let variables cannot be reinitialized',
+            'Var is functional scope, and let and const are block scope. Also var and let variables can be reinitialized, and const variables cannot be reinitialized',
+            'Let and var are functional scope, const is block scope. Also let and var variables can be reinitialized, and const variables cannot be reinitialized',
+        ],
+        correct: 'Var is functional scope, and let and const are block scope. Also var and let variables can be reinitialized, and const variables cannot be reinitialized',
+        explanation: '',
+        questionId: '22002',
+        keyword: ['let', 'var', 'const']
    },
    {
     question: 'What is Event Delegation?',
@@ -31,9 +31,9 @@ const reactQuestionBank = [
         'Event Delegation is a function that plays an important role in displaying multiple views in a single page application.',
         'It\'s the concept of placing code as close to where it\'s relevant as possible.',
         'A process of checking code during compile time to ensure that all variables are statically typed.',
-        'Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received',
+        'Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.',
     ],
-    correct: 'Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received',
+    correct: 'Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.',
     explanation: 'By providing the event listener to the parent to access the child element with the help of that event',
     questionId: '22003',
     keyword: ['Event Delegation']
@@ -173,7 +173,7 @@ const reactQuestionBank = [
     answers: [
         'The concept of co-location can be boiled down to the fundamental principle of placing code as far away from where it is needed as possible.', 
         'The concept of co-location relates to mounting, unmounding, and rendering.',  
-        'Colocation has to do with the call, apply and bind methods', 
+        'Co-location has to do with the call, apply and bind methods', 
         'The concept of co-location can be boiled down to the fundamental principle of placing code as close to where it\'s relevant as possible.', 
     ],
     correct: 'The concept of co-location can be boiled down to the fundamental principle of placing code as close to where it\'s relevant as possible.',
@@ -195,121 +195,119 @@ const reactQuestionBank = [
     keyword: ['React Application Optimization']
    },
    {
-    question: 'Can React Hooks be called conditionally?',
-    answers: [
-        'Yes.', 
-        'Sometimes.', 
-        'No.',
-    ],
-    correct: 'No.',
-    explanation: '',
-    questionId: '22016',
-    keyword: ['Hooks']
+        question: 'Can React Hooks be called conditionally?',
+        answers: [
+            'Yes.', 
+            'Sometimes.', 
+            'No.',
+        ],
+        correct: 'No.',
+        explanation: '',
+        questionId: '22016',
+        keyword: ['Hooks']
    },
    {
-    question: 'What is static typing?',
-    answers: [
-        'Static typing is a concept of placing code as far away from where it is needed as possible.', 
-        'Static typing is a process in which a user is directed to different pages based on their action or request.', 
-        'Static typing is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.', 
-        'Static typing is a process of checking code during compile time to ensure that all variables are statically typed.', 
-    ],
-    correct: 'Static typing is a process of checking code during compile time to ensure that all variables are statically typed.',
-    explanation: 'Hooks are primarily functions and have been designed in a way to ensure that all attributes are statically typed. You can also use the React API with custom Hooks if you want to enforce stricter static typing within your code',
-    questionId: '22017',
-    keyword: ['Static Typing']
+        question: 'What is static typing?',
+        answers: [
+            'Static typing is a concept of placing code as far away from where it is needed as possible.', 
+            'Static typing is a process in which a user is directed to different pages based on their action or request.', 
+            'Static typing is a situation where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.', 
+            'Static typing is a process of checking code during compile time to ensure that all variables are statically typed.', 
+        ],
+        correct: 'Static typing is a process of checking code during compile time to ensure that all variables are statically typed.',
+        explanation: 'Hooks are primarily functions and have been designed in a way to ensure that all attributes are statically typed. You can also use the React API with custom Hooks if you want to enforce stricter static typing within your code',
+        questionId: '22017',
+        keyword: ['Static Typing']
    },
    {
-    question: 'Give an example of Effect Hooks',
-    answers: [
-        'If an action is performed on a webpage, an Effect Hook may be used to transfer a side effect to another part of the DOM. An example, a title updates the document title of the webpage when a button is clicked.', 
-        'An example of an Effect Hook is placing code as far away from where it is needed as possible.', 
-        'The process in which the computer\'s CPU reads and routes React code, is an example of Effect Hooks.', 
-        'An Effect Hook happens when JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.', 
-    ],
-    correct: 'If an action is performed on a webpage, an Effect Hook may be used to transfer a side effect to another part of the DOM. An example, a title updates the document title of the webpage when a button is clicked.',
-    explanation: '',
-    questionId: '22018',
-    keyword: ['useEffect', 'Hooks']
+        question: 'Give an example of Effect Hooks',
+        answers: [
+            'If an action is performed on a webpage, an Effect Hook may be used to transfer a side effect to another part of the DOM. An example, a title updates the document title of the webpage when a button is clicked.', 
+            'An example of an Effect Hook is placing code as far away from where it is needed as possible.', 
+            'The process in which the computer\'s CPU reads and routes React code, is an example of Effect Hooks.', 
+            'An Effect Hook happens when JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.', 
+        ],
+        correct: 'If an action is performed on a webpage, an Effect Hook may be used to transfer a side effect to another part of the DOM. An example, a title updates the document title of the webpage when a button is clicked.',
+        explanation: '',
+        questionId: '22018',
+        keyword: ['useEffect', 'Hooks']
    },
    {
-    question: 'What are some alternatives to Redux?',
-    answers: [
-        'RTK - or Redux Toolkit', 
-        'Recoil', 
-        'MobX', 
-        'RTK - or Redux Toolkit, Recoil, and MobX', 
-    ],
-    correct: 'RTK - or Redux Toolkit, Recoil, and MobX',
-    explanation: '',
-    questionId: '22019',
-    keyword: ['Redux']
+        question: 'What are some alternatives to Redux?',
+        answers: [
+            'RTK - or Redux Toolkit', 
+            'Recoil', 
+            'MobX', 
+            'RTK - or Redux Toolkit, Recoil, and MobX', 
+        ],
+        correct: 'RTK - or Redux Toolkit, Recoil, and MobX',
+        explanation: '',
+        questionId: '22019',
+        keyword: ['Redux']
    },
    {
-    question: 'What is unit testing in React?',
-    answers: [
-        'Unit Testing is a test performed by a user\'s input from a React app', 
-        'Unit Testing is a function automatically called to test every React component\'s time to execute.', 
-        'Unit Testing the CSS styling of a component.', 
-        'Unit Testing is a testing method that tests an individual unit of software in isolation.', 
-    ],
-    correct: 'Unit Testing is a testing method that tests an individual unit of software in isolation.',
-    explanation: 'nit testing for React Apps means testing an individual React Component. Unit Testing is important for React Apps, as it helps in testing the individual functionality of React components. Libraries used for testing are Jest and Enzyme, as well as Mocha or Chai',
-    questionId: '22020',
-    keyword: ['Unit Testing']
+        question: 'What is unit testing in React?',
+        answers: [
+            'Unit Testing is a test performed by a user\'s input from a React app.', 
+            'Unit Testing is a function automatically called to test every React component\'s time to execute.', 
+            'Unit Testing is the CSS styling of a component.', 
+            'Unit Testing is a testing method that tests an individual unit of software in isolation.', 
+        ],
+        correct: 'Unit Testing is a testing method that tests an individual unit of software in isolation.',
+        explanation: 'nit testing for React Apps means testing an individual React Component. Unit Testing is important for React Apps, as it helps in testing the individual functionality of React components. Libraries used for testing are Jest and Enzyme, as well as Mocha or Chai',
+        questionId: '22020',
+        keyword: ['Unit Testing']
    },
    {
-    question: 'Why do we use Key in React & why should each child in a list have a unique key prompt?',
-    answers: [
-        'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity.', 
-        'Key\'s are needed to open React Component Locks. Keys should be added to every React Component.', 
-        'We use keys in order to get Form inputs, and therefore all forms must contain a key', 
-        'Keys are needed to export React functions to another function.', 
-    ],
-    correct: 'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity.',
-    explanation: '',
-    questionId: '22021',
-    keyword: ['lists', 'keys']
+        question: 'Why do we use Key in React & why should each child in a list have a unique key prompt?',
+        answers: [
+            'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity.', 
+            'Key\'s are needed to open React Component Locks. Keys should be added to every React Component.', 
+            'We use keys in order to get Form inputs, and therefore all forms must contain a key', 
+            'Keys are needed to export React functions to another function.', 
+        ],
+        correct: 'Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity.',
+        explanation: '',
+        questionId: '22021',
+        keyword: ['lists', 'keys']
    },
    {
-    question: 'What are higher order components?',
-    answers: [
-        'A higher-order component is a another name for Redux Toolkit.', 
-        'A higher-order component is a component that is automatically called to test every React component\'s time to execute.', 
-        'A higher-order component is a function that takes a component and returns a new component.', 
-        'A higher-order component is a component that checks code during compile time to ensure that all variables are statically typed.', 
-    ],
-    correct: 'A higher-order component is a function that takes a component and returns a new component.',
-    explanation: '',
-    questionId: '22022',
-    keyword: ['Higher order components']
-
+        question: 'What are higher order components?',
+        answers: [
+            'A higher-order component is a another name for Redux Toolkit.', 
+            'A higher-order component is a component that is automatically called to test every React component\'s time to execute.', 
+            'A higher-order component is a function that takes a component and returns a new component.', 
+            'A higher-order component is a component that checks code during compile time to ensure that all variables are statically typed.', 
+        ],
+        correct: 'A higher-order component is a function that takes a component and returns a new component.',
+        explanation: '',
+        questionId: '22022',
+        keyword: ['Higher order components']
    },
    {
-    question: 'Are higher order components a part of a React API',
-    answers: [
-        'Yes, higer order components are a part of the React API, they are a pattern that emerges from React\'s compositional nature.', 
-        'Higher order components are not part of the React API, per se, they are a pattern that emerges from React\'s compositional nature.', 
-        'No, higer order components are a part of the React API, they are a components that emerges from React\'s functional nature.', 
-    ],
-    correct: 'Higher order components are not part of the React API, per se. They are a pattern that emerges from React\'s compositional nature.',
-    explanation: '',
-    questionId: '22023',
-    keyword: ['React API', 'Higher Order Components']
-
+        question: 'Are higher order components a part of a React API',
+        answers: [
+            'Yes, higer order components are a part of the React API, they are a pattern that emerges from React\'s compositional nature.', 
+            'Higher order components are not part of the React API, per se, they are a pattern that emerges from React\'s compositional nature.', 
+            'No, higer order components are a part of the React API, they are a components that emerges from React\'s functional nature.', 
+        ],
+        correct: 'Higher order components are not part of the React API, per se. They are a pattern that emerges from React\'s compositional nature.',
+        explanation: '',
+        questionId: '22023',
+        keyword: ['React API', 'Higher Order Components']
    },
    {
-    question: 'How does DOM structure work?',
-    answers: [
-        'The DOM structure works by linking JavaScript files to an HTML file. This allows DOM methods to access DOM nodes.', 
-        'Each branch of the node ends in a tree, and each tree contains a list. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.', 
-        'Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.', 
-        'The DOM structure works by recurssion.', 
-    ],
-    correct: 'Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.',
-    explanation: 'The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.',
-    questionId: '22024',
-    keyword: ['DOM', 'DOM Structure']
+        question: 'How does DOM structure work?',
+        answers: [
+            'The DOM structure works by linking JavaScript files to an HTML file. This allows DOM methods to access DOM nodes.', 
+            'Each branch of the node ends in a tree, and each tree contains a list. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.', 
+            'Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.', 
+            'The DOM structure works by recurssion.', 
+        ],
+        correct: 'Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.',
+        explanation: 'The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document\'s structure, style, or content.',
+        questionId: '22024',
+        keyword: ['DOM', 'DOM Structure']
    },
    {
         question: 'What is JSX?',
@@ -325,7 +323,7 @@ const reactQuestionBank = [
         keyword: ['JSX', 'XML'],
    },
    {
-        question: 'Why is "class" called ClassName in React',
+        question: 'Why is "class" called ClassName in React?',
         answers: [
             'Because ClassName is what React uses for an element id.', 
             'Because ClassName is easier to compile at run time', 
@@ -379,7 +377,7 @@ const reactQuestionBank = [
         answers: [
             'A one-way data flow where the data can move in only one pathway when being transferred between different parts of the program.', 
             'A two-way data binding, that refers to sharing data between a component class and its template.', 
-            'A flow of data that flows like in multiple directions and from parent to child, child to parent, and from child to child.', 
+            'A flow of data that flows in multiple directions and from parent to child, child to parent, and from child to child.', 
         ],
         correct: 'A one-way data flow where the data can move in only one pathway when being transferred between different parts of the program.',
         explanation: '',
@@ -408,7 +406,7 @@ const reactQuestionBank = [
             'The Virtual DOM is a movie starring Bill Gates, the creator of React.', 
         ],
         correct: 'The virtual DOM is a representation of the real DOM (Document Object Model).',
-        explanation: 'I\'ts a virtual representation of a UI that is kept in memory and synced wit the real DOM through a process called reconciliation.',
+        explanation: 'It\'s a virtual representation of a UI that is kept in memory and synced wit the real DOM through a process called reconciliation.',
         questionId: '22032',
         keyword: ['Document Object Model', 'Virtual Document Object Model'],
    },
@@ -470,7 +468,7 @@ const reactQuestionBank = [
             'Event Bubbling are components that catch JavaScript errors and State provides a way to render children into a DOM node that exists outside the DOM hierarchy.', 
             'Event Bubbling is a runtime model, which is responsible for executing the code, collecting and processing events.', 
             'When an event happens, the handler of the innermost element runs, then the parents, and then the further ancestor element, this is event bubbling.', 
-            'Event Bubbling is the process of moving state up to a common anscestor of the components that rely on the same state.', 
+            'Event Bubbling is the process of moving state up to a common ancestor of the components that rely on the same state.', 
         ],
         correct: 'When an event happens, the handler of the innermost element runs, then the parents, and then the further ancestor element, this is event bubbling.',
         explanation: 'Event bubbling relates to the order in which events are propagated in nested elements. In bubbling, when an event happens, the handler of the innermost element runs, then the parents, and then the further ancestor elements. In other words, events bubble up or propagate the DOM tree upwards',
@@ -494,12 +492,12 @@ const reactQuestionBank = [
     {
         question: 'What is the difference between "var" and "let"',
         answers: [
-            'Variables declared by "var" are only available insight the block where they\'re defined and variables declared by "let" are available throught the function in which they\'re declared.', 
-            'Variables declared by "let" are only available insight the block where they\'re defined and variables declared by "var" are available throught the function in which they\'re declared.', 
+            'Variables declared by "var" are only available inside the block where they\'re defined and variables declared by "let" are available throught the function in which they\'re declared.', 
+            'Variables declared by "let" are only available inside the block where they\'re defined and variables declared by "var" are available throught the function in which they\'re declared.', 
             'There is no difference, they both do the same things.', 
             'Variables declared by "var" can only be used in a class component and Variables declared by let can only be used in functional components.', 
         ],
-        correct: 'Variables declared by "let" are only available insight the block where they\'re defined and variables declared by "var" are available throught the function in which they\'re declared.',
+        correct: 'Variables declared by "let" are only available inside the block where they\'re defined and variables declared by "var" are available throught the function in which they\'re declared.',
         explanation: 'See this website for a simple breakdown of the differences between var and let | https://sentry.io/answers/difference-between-let-and-var-in-javascript/',
         questionId: '22039',
         keyword: ['var', 'let'],
@@ -507,12 +505,12 @@ const reactQuestionBank = [
    {
         question: 'What is Hoisting?',
         answers: [
-            'It is the same as lifting up state. It\'s the process of moving state up to a common anscestor of the components that rely on the same state, so that the state can be managed and distributed down to the components that require information held in that state.', 
+            'It is the same as lifting up state. It\'s the process of moving state up to a common ancestor of the components that rely on the same state, so that the state can be managed and distributed down to the components that require information held in that state.', 
             'Hosting happens when JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.', 
             'Hoisting occurs when a user types a specific URL into the browser, if this URL path matches any "route" inside the router file, the user will be redirected to that particular route.', 
             'Hoisting is a process of checking code during compile time to ensure that all variables are statically typed.', 
         ],
-        correct: 'It is the same as lifting up state. It\'s the process of moving state up to a common anscestor of the components that rely on the same state, so that the state can be managed and distributed down to the components that require information held in that state.',
+        correct: 'It is the same as lifting up state. It\'s the process of moving state up to a common ancestor of the components that rely on the same state, so that the state can be managed and distributed down to the components that require information held in that state.',
         explanation: 'If an app is using information from an API call in the header and in the body of the webpage, instead of calling the API in the header and again in the body, we would move the state that manages the API call to common component of the Header and the Body, and then distribute the state from that common component to the Header and the Body.',
         questionId: '22040',
         keyword: ['Hoisting', 'Lifting up state'],
@@ -522,7 +520,7 @@ const reactQuestionBank = [
         answers: [
             'Debouncing is a process where data is passed from one component through multiple interdependent components until you get to the component where the data is needed.', 
             'Debouncing is a process of checking code during compile time to ensure that all variables are statically typed.', 
-            'Debouncing is the process of moving state up to a common anscestor of the components that rely on the same state. ', 
+            'Debouncing is the process of moving state up to a common ancestor of the components that rely on the same state.', 
             'Debouncing is a way of preventing a function from running in multiple instances at the same time.', 
         ],
         correct: 'Debouncing is a way of preventing a function from running in multiple instances at the same time.',
@@ -567,8 +565,192 @@ const reactQuestionBank = [
         questionId: '22044',
         keyword: ['re-render'],
     },
-    
-
+    {
+        question: 'What is a benefit of code-splitting?',
+        answers: [
+            'Reduces download times and allows React powered apps to get much better speeds.', 
+            'Allows React apps to lazy load only the parts that the visitor needs to have at any given time.', 
+            'It checks code during compile time to ensure that all variables are statically typed.', 
+            'It both reduces download times and allows React powered apps to get much better speeds and it allows React apps to lazy load only the parts that the visitor needs to have at any given time.', 
+        ],
+        correct: 'It both reduces download times and allows React powered apps to get much better speeds and it allows React apps to lazy load only the parts that the visitor needs to have at any given time.',
+        explanation: '',
+        questionId: '22045',
+        keyword: ['Lazy-Loading'],
+    },
+    {
+        question: 'How do you get the value from an uncontrolled component?',
+        answers: [
+            'A lazy-load can be used to get the value from an uncontrolled component', 
+            'Event Bubbling can be used to get the value from an uncontrolled component.', 
+            'A useRef can be used to get the value from an uncontrolled component.', 
+            'Prop drilling can be used to get the value from an uncontrolled component.', 
+        ],
+        correct: 'A useRef can be used to get the value from an uncontrolled component.',
+        explanation: '',
+        questionId: '22046',
+        keyword: ['useRef'],
+    },
+    {
+        question: 'What are Refs in React?',
+        answers: [
+            'Refs is a function that plays an important role in displaying multiple views in a single page application.', 
+            'Refs are a function provided by React to access the DOM element and the React element that you might have created on your own.', 
+            'Refs is a testing method that tests an individual unit of software in isolation.', 
+            'Refs is framework that blends together JavaScript and Java in order to make React more flexible.', 
+        ],
+        correct: 'Refs are a function provided by React to access the DOM element and the React element that you might have created on your own.',
+        explanation: 'Refs are used in cases where we want to change the value of a child component, without making use of props and all. They also provide us with good functionality as we can use callbacks with them.',
+        questionId: '22047',
+        keyword: ['Refs'],
+    },
+    {
+        question: 'What are controlled components?',
+        answers: [
+            'Controlled components are components for which the form data is handled by the DOM itself.', 
+            'Controlled components are components that help React identify which items have changed, are added, or are removed.', 
+            'Controlled components are components that check code during compile time to ensure that all variables are statically typed.', 
+            'Controlled components in React are those in which form data is handled by the component\'s state.', 
+        ],
+        correct: 'Controlled components in React are those in which form data is handled by the component\'s state.',
+        explanation: 'Forms are used to store information in a document section. The information from this form is typically sent to a server to perform an action. This data is held by form input elements and control elements, such as input, select, textarea, etc., which maintain and control their states or values.',
+        questionId: '22048',
+        keyword: ['Controlled Components'],
+    },
+    {
+        question: 'What are uncontrolled components?',
+        answers: [
+            'Uncontrolled components are those for which the form data is handled by the DOM itself.', 
+            'Uncontrolled components are components that help React identify which items have changed, are added, or are removed.', 
+            'Uncontrolled components are components that take modules with dependencies, and generates static assets representing those modules.', 
+            'Uncontrolled components are components in React in which form data is handled by the component\'s state.', 
+        ],
+        correct: 'Uncontrolled components are those for which the form data is handled by the DOM itself.',
+        explanation: '“Uncontrolled” refers to the fact that these components are not controlled by React state.',
+        questionId: '22049',
+        keyword: ['Uncontrolled components'],
+    },
+    {
+        question: 'What answer best describes shouldComponentUpdate',
+        answers: [
+            'shouldComponentUpdate is a function that takes a component and returns a new component.', 
+            'shouldComponentUpdate is a portal that provides a way to render children into a DOM node that exists outside the DOM hierarchy.',
+            'shouldComponentUpdate is a method that allows developers to exit the complex react update life cycle to avoid calling it again and again on every re-render. It only updates the component if the props passed to it changes.', 
+            'shouldComponentUpdate is a module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.', 
+        ],
+        correct: 'shouldComponentUpdate is a method that allows developers to exit the complex react update life cycle to avoid calling it again and again on every re-render. It only updates the component if the props passed to it changes.',
+        explanation: '',
+        questionId: '22050',
+        keyword: ['shouldComponentUpdate'],
+    },
+    {
+        question: 'Which answer best describes performance benefits of functional components?',
+        answers: [
+            'The overload created by lifecycle methods are limited in functional components, which avoids unnecessary memory allocations and checks.', 
+            'Functional components provide multiprocessor support and an ORM system that has lots of features.', 
+            'Functional components are fast because only the best developers use them.', 
+        ],
+        correct: 'The overload created by lifecycle methods are limited in functional components, which avoids unnecessary memory allocations and checks.',
+        explanation: '',
+        questionId: '22051',
+        keyword: ['Functional Components'],
+    },
+    {
+        question: 'What are Error Boundaries?',
+        answers: [
+            'React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.', 
+            'Error Boundaries help React identify which items have changed, are added, or are removed.', 
+            'Error Boundaries plays an important role in displaying multiple views in a single page application.', 
+            'Error Boundaries is a way of sticking a specific prop to a specific component.', 
+        ],
+        correct: 'React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.',
+        explanation: 'React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed.',
+        questionId: '22052',
+        keyword: ['Error Boundaries'],
+    },
+    {
+        question: 'Which best describes Context API?',
+        answers: [
+            'Context API is an algorithm that React uses to process large amounts of data.', 
+            'Context API is a process in which a user is directed to different pages based on their action or request', 
+            'Context API is a another name for Redux Toolkit.', 
+            'Context API is a way for a React app to effectively produce global variables that can be passed around.', 
+        ],
+        correct: 'Context API is a way for a React app to effectively produce global variables that can be passed around.',
+        explanation: 'An example is complex data objects. React\'s Context API provides a way to send data like userid, auth, and theme data through the component tree without sending any props manually at every level.',
+        questionId: '22053',
+        keyword: ['Context API'],
+    },
+    {
+        question: 'What is Webpack?',
+        answers: [
+            'Webpack is a module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.', 
+            'Webpack is similar to Component, but it skips re-renders for same props and state. Webpack only renders components when there is a difference between current and previous states or props.', 
+            'Webpack is framework that blends together JavaScript and Java in order to make React more flexible.', 
+            'Webpack helps a React app share data between components which can\'t easily be shared with props.', 
+        ],
+        correct: 'Webpack is a module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.',
+        explanation: '',
+        questionId: '22054',
+        keyword: ['Webpack'],
+    },
+    {
+        question: 'What is the purpose of Webpack?',
+        answers: [
+            'Webpack is used as a state management tool with React and Typescript.', 
+            'Webpack was created to test individual units of software in isolation.', 
+            'Webpack\'s purpose is to move state up to a common ancestor of components that rely on the same state.', 
+            'Webpack takes modules with dependencies, and generates static assets representing those modules.', 
+        ],
+        correct: 'Webpack takes modules with dependencies, and generates static assets representing those modules.',
+        explanation: '',
+        questionId: '22055',
+        keyword: ['Webpack'],
+    },
+    {
+        question: 'Controlled components are predictable because the state of the form elements is handled by the component.',
+        answers: [
+            'True', 
+            'False', 
+        ],
+        correct: 'True',
+        explanation: '',
+        questionId: '22056',
+        keyword: ['Controlled Components'],
+    },
+     {
+        question: 'Uncontrolled components are predictable because, during the lifecycle of a component, the form elements can lose their reference and may be changed/affected by other sources',
+        answers: [
+            'True', 
+            'False', 
+        ],
+        correct: 'False',
+        explanation: 'Uncontrolled components ARE NOT predictable because, during the lifecycle of a component, the form elements can lose their reference and may be changed/affected by other sources',
+        questionId: '22057',
+        keyword: ['Uncontrolled components'],
+    },
+     {
+        question: 'Controlled components enable you to effectively employ form validation to your forms. It doesn\'t matter what changes the form elements. Their values are safe in our local states, so that\'s where we perform our validation.',
+        answers: [
+            'True', 
+            'False',  
+        ],
+        correct: 'True',
+        explanation: '',
+        questionId: '22058',
+        keyword: [''],
+    },
+     {
+        question: 'With controlled components, you are not in control of your form elements\' values, and you can\'t dictate how they go and what can and cannot be inserted.',
+        answers: [
+            'True', 
+            'False', 
+        ],
+        correct: 'False',
+        explanation: 'With controlled components, you ARE very much in control of your form elements\' values. You can dictate how they go and what can and cannot be inserted',
+        questionId: '22059',
+        keyword: ['Controlled Components'],
+    },
 ];
 
 
