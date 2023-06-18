@@ -731,7 +731,7 @@ const djangoQuestionBank =[
         question: 'What is Sessions framework in Django?',
         answers: [
             'The Sessions framework is another name for middleware.', 
-            'The Sessions framework is is what is responsible for display web pages from Django.', 
+            'The Sessions framework is what is responsible for displaying web pages from Django.', 
             'The Sessions framework is where django uploads user generated content.', 
             'The Sessions framework in Django is used to store arbitrary information about the user on the server in the database.', 
         ],

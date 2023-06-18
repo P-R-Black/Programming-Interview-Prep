@@ -92,7 +92,7 @@
 
 
 .bg_circle_three{
-    position: absolute;
+   position: absolute;
    width: 40rem;
    height: 40rem;
    z-index: -999;
@@ -108,4 +108,19 @@
 .keyword_box{
     color: rgb(24, 137, 134);
     margin: 1rem 0;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ===============*/
+@media screen and (max-width: 1024px){
+
+
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ===============*/
+@media screen and (max-width: 600px){
+    .bg_circle_two,
+    .bg_circle_three {
+        display: none;
+    }
+
 }

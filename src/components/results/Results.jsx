@@ -24,8 +24,6 @@ export const Results = ({numberOfQuestions, score, missed, showMissedQuestion, r
     },[showMissedQuestion])
     
 
-
-
   return (
     <div className='container result_container'>
         <div className="quiz_results">
@@ -38,7 +36,7 @@ export const Results = ({numberOfQuestions, score, missed, showMissedQuestion, r
             ): (
                 <div className="answer_summary_container">
                 <div className="answer_summary">
-                    <p><span className="wrong_question ques">What You Got Wrong</span><span className="wrong_answers ans">The Correct Answer(s)</span></p>
+                    <p><span className="wrong_question ques">What You Got Wrong</span><span className="wrong_answers ans">The Correct Answer</span></p>
                 </div>
                 {
                     showMissedQuestion.map((ques, idx) => (

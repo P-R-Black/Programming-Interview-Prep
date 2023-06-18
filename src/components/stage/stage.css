@@ -46,10 +46,7 @@
 @media screen and (max-width: 600px){
 
     .bg_circle {
-        bottom: 90%;
-        height: 25rem;
-        left: 30%;
-        width: 20rem;
+        display: none
     }
    
 }
@@ -57,10 +54,7 @@
 @media screen and (max-width: 380px){
 
     .bg_circle {
-        bottom: 90%;
-        height: 25rem;
-        left: 22%;
-        width: 20rem;
+        display: none;
     }
    
 }
