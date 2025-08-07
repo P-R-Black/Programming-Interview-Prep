@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +18,8 @@
     --color-secondary-border: #1489dd;
     --color-selected-links: #bdcef4;
 
-    --box-shadow-primary: -20px 10px 1px rgba(0, 0, 0, .61 );
-    --box-shadow-secondary: -8px 5px 1px rgba(0, 0, 0, .61 );
+    --box-shadow-primary: -20px 10px 1px rgba(0, 0, 0, .61);
+    --box-shadow-secondary: -8px 5px 1px rgba(0, 0, 0, .61);
     --text-shadow--primary: -12px 12px 8px rgba(0, 0, 0, .61);
 
     --transition: all 400ms ease;
@@ -30,11 +31,11 @@
     --color-circle: #14163f;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: var(--color-primary-bg);
     background: linear-gradient(162deg, var(--color-primary-bg) 75%, var(--color-secondary-bg) 97%);
     background-attachment: fixed;
@@ -48,7 +49,11 @@ body{
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 500;
 }
 
@@ -62,13 +67,14 @@ section {
 
 
 #btn {
-    
+
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--color-primary-border);
     border-radius: 16px;
     box-shadow: var(--box-shadow-secondary);
     color: var(--color-primary-font);
+    cursor: pointer;
     font-size: 1rem;
     transition: var(--transition);
     -webkit-backdrop-filter: blur(5px);
@@ -76,7 +82,8 @@ section {
     text-align: left;
 }
 
-#btn:hover, .btn:hover {
+#btn:hover,
+.btn:hover {
     background-color: var(--color-primary-font);
     color: var(--color-primary-bg);
     border-color: transparent;
@@ -88,7 +95,7 @@ section {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--color-primary-border);
     border-radius: 8px;
-    box-shadow: var( --box-shadow-secondary);
+    box-shadow: var(--box-shadow-secondary);
     color: var(--color-primary-font);
     font-size: 1rem;
     transition: var(--transition);
@@ -107,13 +114,13 @@ a h3.active {
 }
 
 hr {
-    border: .1rem solid var( --color-secondary-border);
+    border: .1rem solid var(--color-secondary-border);
     margin-top: 4.5rem;
 }
 
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .container {
         margin: 1rem 1rem;
         width: var(--container--width-md);
@@ -125,7 +132,7 @@ hr {
 }
 
 /* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .container {
         margin: 0 1rem;
         width: var(--container--width-sm);
@@ -135,10 +142,14 @@ hr {
         margin-top: 2rem;
     }
 
-    h1, h2, h3, h4, h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         font-weight: 300;
     }
-    
+
     h1 {
         font-size: 1.75rem;
     }
