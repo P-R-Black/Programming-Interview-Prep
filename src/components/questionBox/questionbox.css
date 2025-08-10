@@ -4,7 +4,8 @@
 
 .question_box_container {
     align-items: center;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
+    width: auto;
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.10);
     border: 1px solid var(--color-primary-border);
@@ -20,13 +21,15 @@
 }
 
 .question {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: .75rem 0;
     text-align: left;
     text-shadow: var(--text-shadow--primary);
 }
 
-
+.question_box_container img {
+    padding: .75rem 0;
+}
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {

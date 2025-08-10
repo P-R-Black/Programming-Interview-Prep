@@ -1,3 +1,5 @@
+import svgImageProp from '../assets/questionImages/svg2.jpeg';
+
 const cssQuestionBank = [
     {
         question: 'If using CSS Grid, which media query would you use to change the number of columns for screen widths larger than or equal to 768px?',
@@ -54,7 +56,7 @@ const cssQuestionBank = [
     {
         question: 'What is a display flex?',
         answers: [
-            '"display: flex" hides the element and remove its space from the layout.',
+            '"display: flex" hides the element and removes its space from the layout.',
             '"display: flex" describes how HTML elements are rendered as rectangular boxes in a web browser.',
             '"display: flex" establishes a flexbox container, which allows for flexible and responsive layouts by controlling the arrangement and alignment of its direct child elements, known as flex items.',
             '"display: flex" is the CSS command used to bend or warp a border.',
@@ -67,12 +69,12 @@ const cssQuestionBank = [
     {
         question: 'What are psuedo-classes and psuedo-elements?',
         answers: [
-            '',
-            '',
-            '',
-            'pseudo-classes and pseudo-elements are special keywords used with selectors to apply styles to elements',
+            'pseudo-classes and pseudo-elements are an alternate term used to describe the "Box Model"',
+            'pseudo-classes and pseudo-elements are semantic tags that are used to process the inputs of a form.',
+            'pseudo-classes and pseudo-elements are not related to CSS, but are terms used to describe the atmosphere of Saturn.',
+            'pseudo-classes and pseudo-elements are special keywords used with selectors to apply styles to elements.',
         ],
-        correct: '',
+        correct: 'pseudo-classes and pseudo-elements are special keywords used with selectors to apply styles to elements.',
         explanation: '',
         questionId: '26005',
         keyword: ['psuedo classes', 'psuedo elements'],
@@ -81,13 +83,13 @@ const cssQuestionBank = [
     {
         question: 'What is the difference between margin and padding?',
         answers: [
-            '',
-            '',
-            '',
-            '',
+            'Margin and padding are the same thing, there is no difference.',
+            'Padding creates space around an element, while margin creates space within an element.',
+            'Margin creates space around an element, while padding creates space within an element.',
+            'Margin controls with width of an element and padding conrols the height of an element.',
         ],
-        correct: '',
-        explanation: '',
+        correct: 'Margin creates space around an element, while padding creates space within an element.',
+        explanation: 'Margin is the space outside the element\'s border, separating it from other elements, while padding is the space between the element\'s content and its border.',
         questionId: '26006',
         keyword: ['margin', 'padding'],
     },
@@ -107,10 +109,10 @@ const cssQuestionBank = [
     {
         question: 'What are psuedo-classes?',
         answers: [
-            '',
+            'Pseudo-classes are tags like the <div> and <span> tags.',
             'Pseudo-classes select and style elements based on their current state or context, rather than their position in the document tree.',
-            '',
-            '',
+            'Pseudo-classes allow styling of specific, otherwise inaccessible, parts of an element or the insertion of content that is not part of the document\'s HTML.',
+            'Pseudo-classes hides elements and removes its space from the layout.',
         ],
         correct: 'Pseudo-classes select and style elements based on their current state or context, rather than their position in the document tree.',
         explanation: '',
@@ -120,10 +122,10 @@ const cssQuestionBank = [
     {
         question: 'What are psuedo-elements?',
         answers: [
-            '',
+            'Pseudo-elements select and style elements based on their current state or context, rather than their position in the document tree.',
             'Pseudo-elements allow styling of specific, otherwise inaccessible, parts of an element or the insertion of content that is not part of the document\'s HTML.',
-            '',
-            '',
+            'Pseudo-elements hides elements and removes its space from the layout.',
+            'Pseudo-elements are tags like the <div> and <span> tags.',
         ],
         correct: 'Pseudo-elements allow styling of specific, otherwise inaccessible, parts of an element or the insertion of content that is not part of the document\'s HTML.',
         explanation: '',
@@ -147,11 +149,11 @@ const cssQuestionBank = [
         question: '"::before" is an example of a',
         answers: [
             'CSS Library',
-            'Pseudo-elements',
+            'Pseudo-element',
             'A command to make HTML elements bounce around the page',
             'Pseudo-class',
         ],
-        correct: 'Pseudo-elements',
+        correct: 'Pseudo-element',
         explanation: '',
         questionId: '26010',
         keyword: ['psuedo classes', 'psuedo elements'],
@@ -172,15 +174,95 @@ const cssQuestionBank = [
     {
         question: 'What is the CSS specificity value for "header ul.navigation"',
         answers: [
+            '0,0,1,2',
+            '0,1,2,3',
+            '1,1,0,0',
+            '1,1,0,0',
+        ],
+        correct: '0,0,1,2',
+        explanation: '0 inline styles, 0 ID selectors, 1 class (.naviation), 2 element (header & ul)',
+        questionId: '26012',
+        keyword: ['CSS specificity values'],
+    },
+    {
+        question: 'What is the CSS specificity value for "#header nav ul.primary > li.active"',
+        answers: [
             '0,0,1,1',
             '0,1,2,3',
             '1,1,0,0',
             '1,1,0,0',
         ],
-        correct: '0,0,1,1',
-        explanation: '0 IDs, 1 class (.naviation), 1 element (header)',
-        questionId: '26011',
+        correct: '0,1,2,3',
+        explanation: '0 inline styles, 1 ID Selector (#header), 2 Class Selectors (.primary & .active), 3 elements/pseudo-elements (nav, ul, & li)',
+        questionId: '26013',
         keyword: ['CSS specificity values'],
+    },
+    {
+        question: 'What is the CSS specificity value for "<p style="color: red;">Hello</p>"',
+        answers: [
+            '0,0,1,1',
+            '0,1,2,3',
+            '1,0,0,0',
+            '1,1,0,0',
+        ],
+        correct: '1,0,0,0',
+        explanation: '1 inline style, 0 ID Selectors, 0 Class Selectors, 0 for elements/pseudo-elements',
+        questionId: '26014',
+        keyword: ['CSS specificity values'],
+    },
+    {
+        question: 'You need to blur a background, but keep the text and buttons in the foreground sharp and easy to read, which CSS property should you using to blur the background image?',
+        answers: [
+            'background-filter',
+            'blur-imageC',
+            'filter',
+            'background-blur',
+        ],
+        correct: 'filter',
+        explanation: 'filter lets you apply graphical effects (like blur) to an element or its contents. For example .background { filter: blur(5px);}',
+        questionId: '26015',
+        keyword: ['CSS Styling', 'filter'],
+    },
+    {
+        question: 'You want to apply a 100% grayscale effect to all images within a specific section of your website with an ID of gallery, which CSS rule would you apply?',
+        answers: [
+            '#gallery img { filter:gray(100%) }',
+            '#gallery img { filter-effect:grayscale(100%) }',
+            '#gallery img { filter-type: grayscale(100%) }',
+            '#gallery img { filter: grayscale(100%); }',
+        ],
+        correct: '#gallery img { filter: grayscale(100%); }',
+        explanation: '',
+        questionId: '26016',
+        keyword: ['CSS Styling', 'filter'],
+    },
+    {
+        question: 'You have an image on your website that you want to apply a blur effect to using an SVG markup filter, as shown below. How can you use this filter with the CSS filter property?',
+        image: svgImageProp,
+        answers: [
+            'filter: url(#blurFilter)',
+            'svg(#blurFilter)',
+            'filter:markup(#blurFilter)',
+            '#blurFilter',
+        ],
+        correct: 'filter: url(#blurFilter)',
+        explanation: "The value of the CSS filter property can reference an SVG filter using the url() syntax pointing to the filter’s ID",
+        questionId: '26017',
+        keyword: [''],
     },
 ];
 export default cssQuestionBank;
+
+// {
+//     question: '',
+//     answers: [
+//         '', 
+//         '', 
+//         '', 
+//         '', 
+//     ],
+//     correct: '',
+//     explanation: '',
+//     questionId: '24004',
+//     keyword: [''],
+// },
