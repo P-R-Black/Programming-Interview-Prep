@@ -9,7 +9,7 @@ export const Nav = ({ getLogo, logo, refreshPage }) => {
         setIsActive(current => !current)
     }
 
-
+    console.log('logo', logo)
 
     return (
         <>
@@ -28,6 +28,8 @@ export const Nav = ({ getLogo, logo, refreshPage }) => {
                     <a href="#html"><h3 tabIndex='5' aria-labelledby='HTML' data-testid="navLinkTestHTML" className={isActive ? '' : 'active'} onClick={(event) => { getLogo(event); activateLink() }}>HTML</h3></a>
                     |
                     <a href="#css"><h3 tabIndex='6' aria-labelledby='CSS' data-testid="navLinkTestCSS" className={isActive ? '' : 'active'} onClick={(event) => { getLogo(event); activateLink() }}>CSS</h3></a>
+                    |
+                    <a href="#full-stack"><h3 tabIndex='7' aria-labelledby='FullStack' data-testid="navLinkTestFullStack" className={isActive ? '' : 'active'} onClick={(event) => { getLogo(event); activateLink() }}>{"Full Stack"}</h3></a>
 
                 </div>
             </nav>

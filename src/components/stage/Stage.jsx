@@ -5,6 +5,7 @@ import reactQuestionBank from '../../quizQuestions/reactQuestions';
 import djangoQuestionBank from '../../quizQuestions/djangoQuestions';
 import htmlQuestionBank from '../../quizQuestions/htmlQuestions';
 import cssQuestionBank from '../../quizQuestions/cssQuestions';
+import fullStackQuestionBank from '../../quizQuestions/fullStackQuestions';
 
 import { Nav } from '../nav/Nav'
 import { Counter } from '../counter/Counter'
@@ -34,15 +35,16 @@ export const Stage = () => {
         React: reactQuestionBank,
         Django: djangoQuestionBank,
         HTML: htmlQuestionBank,
-        CSS: cssQuestionBank
+        CSS: cssQuestionBank,
+        FullStack: fullStackQuestionBank,
+
     }
 
-    const quizQuest = questionBanks[logo] || [];
+    console.log('fullStackQuestionBank', fullStackQuestionBank)
 
+    const quizQuest = questionBanks[logo === "Full Stack" ? "FullStack" : logo] || [];
     const quizQuestArray = quizQuest.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
-
     const { question, image, answers, correct, explanation, keyword } = quizQuestArray[activeQuestion];
-
     const [updated, setUpdated] = useState(numberOfQuestions);
 
 
