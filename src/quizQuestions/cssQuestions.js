@@ -250,6 +250,58 @@ const cssQuestionBank = [
         questionId: '26017',
         keyword: [''],
     },
+    {
+        question: 'How would you implement a design that needs to be responsive across various devices?',
+        answers: [
+            '',
+            'By untilizing CSS media queries to apply different styles based on device characteristics like width, height, or orientation.',
+            '',
+            '',
+        ],
+        correct: 'By untilizing CSS media queries to apply different styles based on device characteristics like width, height, or orientation.',
+        explanation: '',
+        questionId: '26018',
+        keyword: [''],
+    },
+    {
+        question: 'Which of the answers best describes CSS Flexbox?',
+        answers: [
+            'CSS Flexbox is a one-dimensional layout method ideal for arranging items in a single row or column.',
+            'CSS Flexbox is a two-dimensional layout system, perfect for crafting complext layouts and aligning content within rows and columns.',
+            'CSS Flexbox is a media query used to apply different styles based on device characteristics.',
+            'CSS Flexbox is a formula used to calculate CSS specificity values.',
+        ],
+        correct: 'CSS Flexbox is a one-dimensional layout method ideal for arranging items in a single row or column.',
+        explanation: '',
+        questionId: '24019',
+        keyword: ['CSS Flexbox'],
+    },
+    {
+        question: 'Which of the answers best describes CSS Grid?',
+        answers: [
+            'CSS Grid is a one-dimensional layout method ideal for arranging items in a single row or column.',
+            'CSS Grid is a two-dimensional layout system, perfect for crafting complext layouts and aligning content within rows and columns.',
+            'CSS Grid is a media query used to apply different styles based on device characteristics.',
+            'CSS Grid is a formula used to calculate CSS specificity values.',
+        ],
+        correct: 'CSS Grid is a two-dimensional layout system, perfect for crafting complext layouts and aligning content within rows and columns.',
+        explanation: '',
+        questionId: '24020',
+        keyword: ['CSS Grid'],
+    },
+    {
+        question: 'What are CSS preprocessors',
+        answers: [
+            '',
+            '',
+            '',
+            'CSS preprocessors like SASS and LESS extend CSS with variables, nested rules, and functions.',
+        ],
+        correct: 'CSS preprocessors like SASS and LESS extend CSS with variables, nested rules, and functions.',
+        explanation: '',
+        questionId: '24021',
+        keyword: ['CSS preprocessors'],
+    },
 ];
 export default cssQuestionBank;
 

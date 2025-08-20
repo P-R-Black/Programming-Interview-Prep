@@ -1,0 +1,150 @@
+const javaScriptQuestionBank = [
+    {
+        question: 'What is a closure in JavaScript?',
+        answers: [
+            'A closure is a feature where an inner function has access to the outer (encolosing) function\'s variables.',
+            '',
+            '',
+            '',
+        ],
+        correct: 'A closure is a feature where an inner function has access to the outer (encolosing) function\'s variables.',
+        explanation: '',
+        questionId: '28000',
+        keyword: ['JavaScript closures'],
+    },
+    {
+        question: 'Which answer best explains the difference between .then() and async/await in handling asynchronous operations in JavaScript?',
+        answers: [
+            '',
+            '',
+            '.then() is used with promises for asynchronous operations, chaining multiple calls for sequential exeuction, while async/await makes asynchronous code look syncronous and is syntactic sugar over Promises.',
+            '',
+        ],
+        correct: '.then() is used with promises for asynchronous operations, chaining multiple calls for sequential exeuction, while async/await makes asynchronous code look syncronous and is syntactic sugar over Promises',
+        explanation: '',
+        questionId: '28001',
+        keyword: ['.then()', 'async/await'],
+    },
+
+    {
+        question: 'What is tree shaking?',
+        answers: [
+            '',
+            '',
+            '',
+            'Tree shaking is a process used in modern build tools like Webpack to eliminate unused code from the final bundle.',
+        ],
+        correct: 'Tree shaking is a process used in modern build tools like Webpack to eliminate unused code from the final bundle.',
+        explanation: '',
+        questionId: '28003',
+        keyword: ['Tree shaking', 'frontend performance improvement'],
+    },
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28004',
+        keyword: ['', ''],
+    },
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28005',
+        keyword: ['', ''],
+    },
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28006',
+        keyword: ['', ''],
+    },
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28007',
+        keyword: ['', ''],
+    },
+
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28008',
+        keyword: [''],
+    },
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28009',
+        keyword: [''],
+    },
+    {
+        question: '',
+        answers: [
+            '',
+            '',
+            '',
+            '',
+        ],
+        correct: '',
+        explanation: '',
+        questionId: '28010',
+        keyword: [''],
+    },
+]
+export default javaScriptQuestionBank;
+
+
+// {
+//     question: '',
+//     answers: [
+//         '', 
+//         '', 
+//         '', 
+//         '', 
+//     ],
+//     correct: '',
+//     explanation: '',
+//     questionId: '28000',
+//     keyword: [''],
+// },

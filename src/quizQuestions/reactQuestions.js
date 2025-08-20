@@ -4,6 +4,10 @@
 import CustomHookOne from '../assets/questionImages/customHookOne.jpeg';
 import CustomHookTwo from '../assets/questionImages/customHookTwo.jpeg';
 import CustomHookThree from '../assets/questionImages/customHookThree.jpeg';
+import reducerImg from '../assets/questionImages/reducerImg.jpeg';
+import hideWrapperOne from '../assets/questionImages/HideWrapperCorrect.jpeg';
+import hideWrapperTwo from '../assets/questionImages/HideWrapperTwo.jpeg';
+import componentUnmount from '../assets/questionImages/componentUnmount.jpeg';
 
 const reactQuestionBank = [
     {
@@ -794,6 +798,101 @@ const reactQuestionBank = [
         questionId: '22062',
         keyword: ['Custom React hooks', 'naming conventions'],
     },
+    {
+        question: 'How do you execute a JavaScript function when a button is double-cliecked?',
+        image: CustomHookThree,
+        answers: [
+            '<button id="click" ondblclick="func()"></button>',
+            '<button id="click" ondoubleclick="func()"></button>',
+            '<button id="click" onclick="func()"></button>',
+            '<button id="click" ondclick="func()"></button>',
+        ],
+        correct: '<button id="click" ondblclick="func()"></button>',
+        explanation: 'Calling useEffect conditionally or improperly like this can break the Rules of Hooks and the code shown is calling useEffect(obj) — which is invalid unless obj is a function. But even then, this is not how you\'d define a custom hook. Calling useEffect conditionally or improperly like this can break the Rules of Hooks',
+        questionId: '22063',
+        keyword: ['JavaScript click event', 'JavaScript onclick', 'JavaScript ondblclick'],
+    },
+    {
+        question: 'Following the reducer below, which action should be dispatched in order to change the state from "apple" to "orange".',
+        image: reducerImg,
+        answers: [
+            'orange',
+            'null',
+            '{type: "apple"}',
+            '{event: "orange"}',
+        ],
+        correct: 'null',
+        explanation: '',
+        questionId: '22064',
+        keyword: ['Automatic Semicolon Insertion (ASI)', 'Reducers & Pure Functions', 'JavaScript Equality & Type Checking', 'Object vs Primitive Actions'],
+    },
+    {
+        question: 'Which of the following components uses the input element as a controlled component?',
+        answers: [
+            'const MyComponent = () => { const ref = useRef(); return <input ref={ref};}',
+            'const MyComponent = () => { const [value, setValue] = useState(""); return <input onChange={(e) => setValue(e.target.value)};}',
+            'const MyComponent = () => { const [value, setValue] = useState(""); return <input defaultValue={value};}',
+            'const MyComponent = () => { const [value, setValue] = useState(""); return <input value={value} onChange={(e) => setValue(e.target.value)} />;}',
+        ],
+        correct: 'const MyComponent = () => {const [value, setValue] = useState(""); return <input value={value} onChange={(e) => setValue(e.target.value)} />;}',
+        explanation: 'A controlled component in React is one where the form element’s value is driven by React state. In this example: value={value} → The <input>’s displayed value comes from React state and onChange updates that state whenever the user types.',
+        questionId: '22065',
+        keyword: ['controlled components'],
+    },
+
+    {
+        question: 'Will this wrapper hide its child component for four seconds?',
+        image: hideWrapperOne,
+        answers: [
+            'Yes',
+            'No',
+        ],
+        correct: 'Yes',
+        explanation: 'In this example the wrapper uses React state (visible) to control whether the children are rendered. Initially visible is false, so it returns null (nothing is shown), After 4 seconds (4000 ms), setVisible(true) is called, triggering a re-render that shows props.children.',
+        questionId: '22066',
+        keyword: ['usetate + effects', 'timeout'],
+    },
+
+    {
+        question: 'Will this wrapper hide its child component for four seconds?',
+        image: hideWrapperTwo,
+        answers: [
+            'Yes',
+            'No',
+        ],
+        correct: 'No',
+        explanation: 'setTimeout doesn\'t delay the render in React - it just schedules a function to run later. Also, returning from inside setTimeout doesn\'t return anythiing to the component\'s render function.',
+        questionId: '22067',
+        keyword: ['setTimeout, '],
+    },
+    {
+        question: 'Considering the code below, when will the MyChild component be unmounted?',
+        image: componentUnmount,
+        answers: [
+            'When the value property is different from 3',
+            'Never',
+            'When the value property is equal to 3',
+            'After each render of the MyPareent component.',
+        ],
+        correct: 'When the value property is equal to 3',
+        explanation: "value !== 3 && <MyChild /> means, If value is not 3 -> render <MyChild />. If value is 3 -> render false (which means nothing in JSX). In React, if a component that was previously rendered is now replaced with null/false/nothing, it’s unmounted.",
+        questionId: '22068',
+        keyword: ['Reach lifecycle sequence', 'component mount', 'component unmount'],
+    },
+    {
+        question: 'What is the difference between the useState and useReducer hooks in React?',
+        answers: [
+            'useState is suitaable for simple state logic like providing variable and function updates and useReducer is better for complex state logic that involves multiple sub-values.',
+            '',
+            '',
+            '',
+        ],
+        correct: 'useState is suitaable for simple state logic like providing variable and function updates and useReducer is better for complex state logic that involves multiple sub-values.',
+        explanation: '',
+        questionId: '22069',
+        keyword: ['useState', 'useReducer', 'React Hooks'],
+    },
+
 ];
 
 
@@ -815,34 +914,3 @@ export default reactQuestionBank;
 //     questionId: '22043',
 //     keyword: [''],
 // },
-
-
-
-
-// const useCustomHook = (values = []) => {
-//     const sortedValues = values.sort((a, b) => a > b);
-//     let valuesObject = sortedValues.reduce((acc, v, i) => (
-//         { ...acc, ['value' + i]: v }),
-//         {}
-//     );
-//     const addValue = (key, newValue) => {
-//         valuesObject[key] = newValue;
-//     }
-//     return { valuesObject, addValue }
-// }
-
-
-// const useCustomHook = () => {
-//     const [fruits, setFruits] = useState([]);
-//     useEffect(() => {
-//         console.log(fruits);
-//     }, [fruits])
-//     const addFruit = (f) => setFruits((p) => [...p, f]);
-//     return { fruits, version: 1, addFruit };
-// }
-
-
-// const useCustomHook = useState;
-
-
-// const useCustomHook = (obj) => useEffect(obj)

@@ -6,6 +6,7 @@ import djangoQuestionBank from '../../quizQuestions/djangoQuestions';
 import htmlQuestionBank from '../../quizQuestions/htmlQuestions';
 import cssQuestionBank from '../../quizQuestions/cssQuestions';
 import fullStackQuestionBank from '../../quizQuestions/fullStackQuestions';
+import javaScriptQuestionBank from "../../quizQuestions/javaScriptQuestions"
 
 import { Nav } from '../nav/Nav'
 import { Counter } from '../counter/Counter'
@@ -37,19 +38,32 @@ export const Stage = () => {
         HTML: htmlQuestionBank,
         CSS: cssQuestionBank,
         FullStack: fullStackQuestionBank,
+        JavaScript: javaScriptQuestionBank,
 
     }
 
-    console.log('fullStackQuestionBank', fullStackQuestionBank)
-
     const quizQuest = questionBanks[logo === "Full Stack" ? "FullStack" : logo] || [];
-    const quizQuestArray = quizQuest.sort(() => 0.5 - Math.random()).slice(0, numberOfQuestions);
+
+    // 1. Select all questions
+    const uniqueQuestions = Array.from(
+        new Map(quizQuest.map(q => [q.questionId, q])).values()
+    );
+
+    // 2. Shuffle all questions using Fisher–Yates
+    const shuffledQuestions = [...uniqueQuestions].sort(() => Math.random() - 0.5);
+    console.log('shuffledQuestions', shuffledQuestions)
+
+    // 3. Slice from shuffled questions to desired number
+    const quizQuestArray = shuffledQuestions.slice(0, numberOfQuestions);
+
+    console.log('quizQuestArray', quizQuestArray)
     const { question, image, answers, correct, explanation, keyword } = quizQuestArray[activeQuestion];
     const [updated, setUpdated] = useState(numberOfQuestions);
 
 
 
     const handleChange = (e) => {
+        e.preventDefault()
         const digits = getDigit.current.value
         if (digits === "") return;
         setUpdated(digits);
@@ -64,6 +78,7 @@ export const Stage = () => {
 
 
     const getLogo = (e) => {
+        e.preventDefault()
         setLogo(e.target.innerText)
     }
 
