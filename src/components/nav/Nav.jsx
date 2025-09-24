@@ -10,7 +10,6 @@ export const Nav = ({ getLogo, logo, refreshPage }) => {
         setIsActive(current => !current)
     }
 
-    console.log('logo', logo)
 
     return (
         <>

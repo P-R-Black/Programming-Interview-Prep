@@ -810,7 +810,7 @@ const djangoQuestionBank = [
         answers: [
             'A Meta Class is a class that you would inherit from in order to perform unit tests in Django',
             'A Meta Class is a super class that can house all the views of a Django project.',
-            'A Meta Class is is a generic class used for unit testing and functionality testing.',
+            'A Meta Class is a generic class used for unit testing and functionality testing.',
             'A Meta Class is an inner class that provides metadata about the outer class in Django.',
         ],
         correct: 'A Meta Class is an inner class that provides metadata about the outer class in Django.',

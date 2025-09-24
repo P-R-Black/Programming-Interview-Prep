@@ -51,12 +51,10 @@ export const Stage = () => {
 
     // 2. Shuffle all questions using Fisher–Yates
     const shuffledQuestions = [...uniqueQuestions].sort(() => Math.random() - 0.5);
-    console.log('shuffledQuestions', shuffledQuestions)
 
     // 3. Slice from shuffled questions to desired number
     const quizQuestArray = shuffledQuestions.slice(0, numberOfQuestions);
 
-    console.log('quizQuestArray', quizQuestArray)
     const { question, image, answers, correct, explanation, keyword } = quizQuestArray[activeQuestion];
     const [updated, setUpdated] = useState(numberOfQuestions);
 

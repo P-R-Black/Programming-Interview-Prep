@@ -183,7 +183,7 @@ const reactQuestionBank = [
         question: 'How do you maintain a state of colocation?',
         answers: [
             'The concept of co-location can be boiled down to the fundamental principle of placing code as far away from where it is needed as possible.',
-            'The concept of co-location relates to mounting, unmounding, and rendering.',
+            'The concept of co-location relates to mounting, unmounting, and rendering.',
             'Co-location has to do with the call, apply and bind methods',
             'The concept of co-location can be boiled down to the fundamental principle of placing code as close to where it\'s relevant as possible.',
         ],
@@ -834,7 +834,7 @@ const reactQuestionBank = [
             'const MyComponent = () => { const [value, setValue] = useState(""); return <input defaultValue={value};}',
             'const MyComponent = () => { const [value, setValue] = useState(""); return <input value={value} onChange={(e) => setValue(e.target.value)} />;}',
         ],
-        correct: 'const MyComponent = () => {const [value, setValue] = useState(""); return <input value={value} onChange={(e) => setValue(e.target.value)} />;}',
+        correct: 'const MyComponent = () => { const [value, setValue] = useState(""); return <input value={value} onChange={(e) => setValue(e.target.value)} />;}',
         explanation: 'A controlled component in React is one where the form element’s value is driven by React state. In this example: value={value} → The <input>’s displayed value comes from React state and onChange updates that state whenever the user types.',
         questionId: '22065',
         keyword: ['controlled components'],
@@ -914,3 +914,49 @@ export default reactQuestionBank;
 //     questionId: '22043',
 //     keyword: [''],
 // },
+
+
+let questoinsForReview = new Set()
+
+const checkTest = (question) => {
+
+    let newArray = []
+    let questionId = question['questionId']
+    let correct = question['correct']
+
+    question['answers'].map((testing) => newArray.push(testing))
+
+
+    if (callCheck(newArray, correct)) {
+        return true
+    }
+    return [false, questionId]
+}
+
+const callCheck = (answers, correct) => {
+
+    if (answers.includes(correct)) {
+        return true
+    }
+
+    return false
+}
+
+
+const testQuizesBank = () => {
+
+    for (let i in reactQuestionBank) {
+        for (let j in reactQuestionBank[i]) {
+            let test = checkTest(reactQuestionBank[i])
+            if (test === true) {
+                break
+
+            } else {
+                questoinsForReview.add(test[1])
+            }
+        }
+
+    }
+    console.log('Questions for review', questoinsForReview)
+}
+// testQuizesBank()
